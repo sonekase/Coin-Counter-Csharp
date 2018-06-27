@@ -146,7 +146,7 @@ namespace Coin
       string nickelOut = nickels.ToString();
       string pennyOut = pennys.ToString();
 
-      return "Quarter: " + quarterOut + ", Dimes: " + dimeOut + ", Nickels: " + nickelOut + ", Penny: " + pennyOut;
+      return "Quarters: " + quarterOut + ", Dimes: " + dimeOut + ", Nickels: " + nickelOut + ", Pennies: " + pennyOut;
 
     }
   }
@@ -156,7 +156,7 @@ namespace Coin
       static void Main()
       {
         CoinCounter TestCounter = new CoinCounter();
-        Console.WriteLine (" Please Amount");
+        Console.WriteLine (" Please Enter Amount");
         string amountString = Console.ReadLine();
         int amountInt = int.Parse(amountString);
         Console.WriteLine(TestCounter.CoinTest(amountInt));

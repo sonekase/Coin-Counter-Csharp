@@ -160,6 +160,12 @@ namespace Coin
         string amountString = Console.ReadLine();
         int amountInt = int.Parse(amountString);
         Console.WriteLine(TestCounter.CoinTest(amountInt));
+        Console.WriteLine(" Would you like to enter another number? Y/N");
+        string newEntry = Console.ReadLine();
+        if(newEntry == "Y" || newEntry == "y")
+        {
+          Main();
+        }
       }
     }
 
